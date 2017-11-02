@@ -10,6 +10,7 @@ body {
 	background-color: #fff;
 	height: 80px;
 	border-bottom: 3px solid #ccc;
+	z-index: 1;
 }
 
 .name {
@@ -24,14 +25,21 @@ body {
 
 .pages{
 	display: inline-block;
-	margin-left: 530px;
+	margin-left: 500px;
 }
 
 .main { 
 	width: 960px;
 	position: relative;
 	margin: 40px auto;
-	padding-bottom: 80px; 
+ }
+
+ .about-me, .portfolio, .contact {
+ 	padding: 0 5px;
+ }
+
+ .about-me, .portfolio {
+ 	border-right: 1px solid #ccc;
  }
 
 .content {
@@ -39,7 +47,8 @@ body {
 	display: inline-block;
 	width: 650px;
 	background-color: #fff;
-	margin-top: 100px;
+	margin: 100px auto 150px;
+	padding-bottom: 25px;
 	position: absolute;
 }
 
@@ -95,4 +104,11 @@ input {
 	width: 100%;
 	height: 80px;
     border-top: 8px solid #4aaaa5;
+}
+
+.foot-txt {
+	margin-top: 30px;
+	font-size: 10px;
+    color: #ccc;
+   	text-align: center;
 }
